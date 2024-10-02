@@ -8,17 +8,146 @@
 	<body>
 
 		<div class="wrapper">
-			@@include('html/_header.htm',{})
+			<header class="header">
+				<div class="header__container">
+					<nav class="header__nav nav">
+						<img src="img/mainlogo.jpg" class="nav__logo" alt="Логотип Империя льда">
+						<ul class="nav__list icon-menu">
+							<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">О школе</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Наши тренеры</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 			<main class="page">
 				<h1 class="main-content__title">Школа фигурного катания "Империя льда"</h1>
-				@@include('html/_hero.htm',{})
-				@@include('html/_info.htm',{})
-				@@include('html/_features.htm',{})
-				@@include('html/_team.htm',{})
-				@@include('html/_pricing.htm',{})
-				@@include('html/_signup.htm',{})
-			</main>
-			@@include('html/_footer.htm',{})
+				<section class="hero">
+					<p class="hero__text">Добро пожаловать в #iceimperiaFamily</p>
+					<a href="#" class="hero__cta"> Бесплатное пробное занятие</a>
+				</section>
+				<section class="info">
+					<h2 class="info__title">Актуальная информация</h2>
+					<img src="#" class="info__image" alt="Набор детей от 3-х лет">
+				</section>
+				<section class="features">
+					<h2 class="features__title">Почему выбирают нас</h2>
+					<ul class="features__list">
+						<li class="features__item">
+							<h3 class="features__subtitle">Тренеры – мастера своего дела</h3>
+							<p class="features__description">
+								В нашей школе работают тренеры, которые
+								не только сами прошли путь к профессиональному спорту, но и успешно
+								подготовили многих чемпионов. Их опыт и знания помогают ученикам
+								раскрывать потенциал, строить уверенность и формировать характер.
+							</p>
+						</li>
+						<li class="features__item">
+							<h3 class="features__subtitle">Программы для профессионального роста</h3>
+							<p class="features__description">Мы создаем специализированные
+								тренировочные программы, нацеленные на развитие технических и физических
+								способностей, необходимых для участия в соревнованиях. Особое внимание
+								уделяется постановке сложных элементов, улучшению гибкости, силы и
+								выносливости, а также психической подготовке к выступлениям.</p>
+						</li>
+						<li class="features__item">
+							<h3 class="features__subtitle">Молодые таланты – наш приоритет</h3>
+							<p class="features__description">Мы уделяем большое внимание детям и
+								подросткам, создавая все условия для их успешного старта в мире
+								фигурного катания. Мы верим, что юные годы — это самое лучшее время для
+								начала спортивной карьеры, и делаем всё, чтобы поддержать их на этом
+								пути.</p>
+						</li>
+						<li class="features__item">
+							<h3 class="features__subtitle">Индивидуальный подход к каждому
+								спортсмену</h3>
+							<p class="features__description">Мы понимаем, что каждый ребенок
+								уникален, и наш подход строится на внимательном учете его способностей,
+								темпов развития и целей. Наши тренеры работают с каждым юным
+								спортсменом, чтобы создать комфортные условия для роста и раскрытия его
+								потенциала.</p>
+						</li>
+						<li class="features__item">
+							<h3 class="features__subtitle">Современные условия для тренировок</h3>
+							<p class="features__description">Наша школа располагает всем необходимым
+								для развития спортсменов: современные ледовые арены, высококлассное
+								оборудование и благоприятные условия для регулярных тренировок на льду в
+								любое время года.</p>
+						</li>
+						<li class="features__item">
+							<h3 class="features__subtitle">Аккредитованная школа</h3>
+							<p class="features__description">Наша школа
+								фигурного катания входит в список аккредитованных организаций, что
+								подтверждает высокий уровень подготовки и профессионализма наших
+								тренеров. Аккредитация дает нам право готовить спортсменов к официальным
+								соревнованиям и предоставляет нашим ученикам дополнительные возможности
+								для роста.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="team">
+					<h2 class="team__title">Наша команда</h2>
+					<ul class="team__list">
+						<li class="team__member">
+							<h4 class="team__name">Стефанова Анастасия Дмитриевна</h4>
+							<img src="#" class="team__photo" alt="Тренер1">
+							<p class="team__role">Главный тренер, основатель школы</p>
+						</li>
+						<li class="team__member">
+							<h4 class="team__name">Иевлев Роман Юрьевич</h4>
+							<img src="#" class="team__photo" alt="Тренер2">
+							<p class="team__role">Тренер групп УТ</p>
+						</li>
+						<li class="team__member">
+							<h4 class="team__name">Рузинская София Михайловна</h4>
+							<img src="#" class="team__photo" alt="Тренер3">
+							<p class="team__role">Тренер групп СОГ-2, НП</p>
+						</li>
+						<li class="team__member">
+							<h4 class="team__name">Любичева Дарья Сергеевна</h4>
+							<img src="#" class="team__photo" alt="Тренер4">
+							<p class="team__role">Тренер групп СОГ-1, любительской группы</p>
+						</li>
+						<li class="team__member">
+							<h4 class="team__name">Снежанна Александровна</h4>
+							<img src="#" class="team__photo" alt="Тренер5">
+							<p class="team__role">Хореограф</p>
+						</li>
+					</ul>
+				</section>
+				<section class="pricing">
+					<h2 class="pricing__title">Стоимость абонементов</h2>
+				</section>
+				<section class="signup">
+					<h2 class="signup__title">Записаться на бесплатное пробное занятие</h2>
+					<form action="submit-form.php" method="post" class="signup__form">
+						<label for="name" class="signup__label">Имя:</label>
+						<input type="text" id="name" name="name" required class="signup__input">
+						<label for="phone" class="signup__label">Телефон:</label>
+						<input type="tel" id="phone" name="phone" required
+							pattern="+7-([0-9]{3})-[0-9]{3}-[0-9]{4}" placeholder="+7(999)215-4556"
+							class="signup__input">
+						<button type="submit" class="signup__button">Отправить заявку</button>
+					</form>
+				</section> </main>
+			<footer class="footer">
+				<div class="footer__container">
+					<section class="footer__location">
+						<h2 class="footer__title">Где мы находимся</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=..." class="footer__map"
+							allowfullscreen loading="lazy"></iframe>
+					</section>
+					<section class="footer__contacts">
+						<a href="#" class="footer__link">VK</a>
+						<a href="#" class="footer__link">Telegram</a>
+						<a href="#" class="footer__link">WhatsApp</a>
+						<a href="mailto:ice.imperia@yandex.ru"
+							class="footer__link">ice.imperia@yandex.ru</a>
+					</section>
+				</div>
+			</footer>
 		</div>
 
 	</body>
